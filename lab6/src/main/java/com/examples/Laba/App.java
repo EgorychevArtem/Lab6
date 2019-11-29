@@ -9,7 +9,7 @@ import org.apache.zookeeper.ZooKeeper;
 import org.asynchttpclient.AsyncHttpClient;
 import java.util.logging.Logger;
 import java.io.IOException;
-
+import akka.actor.Props;
 
 import static org.asynchttpclient.Dsl.asyncHttpClient;
 
