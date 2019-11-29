@@ -9,9 +9,14 @@ import org.asynchttpclient.AsyncHttpClient;
 import static org.asynchttpclient.Dsl.asyncHttpClient;
 public class App {
     public static void main(String[] args) throws IOException {
+        String host = args[0];
+        
+
         ActorSystem system = ActorSystem.create("routes");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
         AsyncHttpClient httpClient = asyncHttpClient();
+
+
 }
