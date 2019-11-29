@@ -10,6 +10,7 @@ import java.io.IOException;
 
 import static org.asynchttpclient.Dsl.asyncHttpClient;
 public class App {
+
     public static void main(String[] args) throws IOException {
         String host = args[0];
         int port = Integer.parseInt(args[1]);
