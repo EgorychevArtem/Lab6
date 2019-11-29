@@ -5,7 +5,7 @@ import akka.http.javadsl.Http;
 import akka.stream.ActorMaterializer;
 import org.apache.zookeeper.ZooKeeper;
 import org.asynchttpclient.AsyncHttpClient;
-
+import java.util.logging.Logger;
 import java.io.IOException;
 
 import static org.asynchttpclient.Dsl.asyncHttpClient;
