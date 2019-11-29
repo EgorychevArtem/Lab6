@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 import java.io.IOException;
 
 import static org.asynchttpclient.Dsl.asyncHttpClient;
+
 public class App {
     static Logger log = Logger.getLogger(App.class.getName());
 
