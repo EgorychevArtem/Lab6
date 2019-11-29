@@ -11,6 +11,7 @@ import java.io.IOException;
 import static org.asynchttpclient.Dsl.asyncHttpClient;
 public class App {
     static Logger log = Logger.getLogger(App.class.getName());
+
     public static void main(String[] args) throws IOException {
         String host = args[0];
         int port = Integer.parseInt(args[1]);
@@ -18,8 +19,8 @@ public class App {
         ActorSystem system = ActorSystem.create("routes");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-
         AsyncHttpClient httpClient = asyncHttpClient();
 
 
+    }
 }
