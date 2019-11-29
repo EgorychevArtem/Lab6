@@ -1,6 +1,8 @@
 package com.examples.Laba;
 
+import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.actor.Props;
 import akka.http.javadsl.Http;
 import akka.stream.ActorMaterializer;
 import org.apache.zookeeper.ZooKeeper;
@@ -21,6 +23,6 @@ public class App {
         final ActorMaterializer materializer = ActorMaterializer.create(system);
         AsyncHttpClient httpClient = asyncHttpClient();
 
-
+        ActorRef storage = system.actorOf(Props.create(Storage.class));
     }
 }
